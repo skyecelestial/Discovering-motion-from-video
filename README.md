@@ -9,6 +9,11 @@ A Python project for tracking a coloured object in a video, learning a closed‑
 - **Overlay visualisation** – Overlays the predicted trajectory onto the original video, producing a combined output video.
 - **End‑to‑end pipeline** – Run all steps automatically with a single command.
 
+## Example Output
+
+Below is an example GIF showing the predicted path overlaid on the original video. The blue trajectory is the model’s prediction based on the learned equation:
+
+![Predicted trajectory overlay](overlay_output.gif)
 ## Installation
 
 1. Clone this repository:
@@ -94,12 +99,6 @@ After running the pipeline, you will find:
 - **Symbolic model complexity:** You can adjust the number of iterations, allowed operators and constraints in `src/real_data.py` to control the complexity and quality of the learned equation.
 - **Input/output paths:** By default the scripts assume `Data/input_video.mp4` and write outputs to `Outputs/`. For more flexibility, modify the paths or refactor the scripts to accept command‑line arguments.
 
-## Example Output
-
-Below is an example GIF showing the predicted path overlaid on the original video. The blue trajectory is the model’s prediction based on the learned equation:
-
-![Predicted trajectory overlay](overlay_output.gif)
-
 ## Contributing
 
 Contributions, issues and feature requests are welcome. If you find a bug or have a suggestion, please open an issue or submit a pull request.
@@ -107,3 +106,4 @@ Contributions, issues and feature requests are welcome. If you find a bug or hav
 ## License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for the full license text and details.
+
