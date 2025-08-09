@@ -7,4 +7,7 @@ Outputs will be saved to `Outputs/`:
 - `overlay_output.mp4` — video with predicted path
 
 - ## Example Output
-<video src="https://github.com/skyecelestial/Discovering-motion-from-video/blob/main/Outputs/overlay_output.mp4?raw=true" controls width="600"></video>
+![Demo](overlay_output.gif)
+
+
+
