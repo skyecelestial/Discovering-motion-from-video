@@ -83,8 +83,12 @@ After running the pipeline, you will find:
 │   ├── real_data.py      # Runs symbolic regression on the positions
 │   ├── overlay.py        # Overlays the predicted path onto the original video
 │   └── pipeline.py       # Runs the full pipeline
-├── requirements.txt      # List of Python dependencies
-└── README.md             # Project documentation
+├── .gitignore
+├── LICENSE
+├── requirements.txt     # List of Python dependencies
+├──  README.md             # Project documentation
+└── overlay_output.gif
+
 ```
 
 ## How it works
@@ -106,4 +110,5 @@ Contributions, issues and feature requests are welcome. If you find a bug or hav
 ## License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for the full license text and details.
+
 
