@@ -1,19 +1,36 @@
 # Discovering Motion from Video
 
-A Python project for tracking a coloured object in a video, learning a closed‑form equation of its trajectory via symbolic regression, and overlaying the predicted path back onto the original video.
+A Python project for tracking a coloured object in a video, learning a closed-form equation of its trajectory via symbolic regression, and overlaying the predicted path back onto the original video.
 
 ## Features
 
 - **Ball tracking** – Uses OpenCV to detect a red ball in each video frame and records its pixel coordinates and timestamps.
 - **Symbolic regression** – Employs the PySR library to learn a mathematical relationship \(y = f(x)\) between the ball’s horizontal and vertical positions.
 - **Overlay visualisation** – Overlays the predicted trajectory onto the original video, producing a combined output video.
-- **End‑to‑end pipeline** – Run all steps automatically with a single command.
+- **End-to-end pipeline** – Run all steps automatically with a single command.
 
 ## Example Output
 
 Below is an example GIF showing the predicted path overlaid on the original video. The blue trajectory is the model’s prediction based on the learned equation:
 
 ![Predicted trajectory overlay](overlay_output.gif)
+
+## Custom Symbolic Regression Result ✨
+
+In addition to the baseline PySR regression, we also implemented a **custom symbolic regression (SR)** method.  
+The custom SR produces a smoother and more accurate trajectory, showing how different regression strategies can improve alignment.
+
+Here is the overlay generated using the custom SR:
+
+![Custom SR overlay](overlay_output_custom.gif)
+
+**Comparison highlights:**
+
+- ✅ The custom SR trajectory (green) follows the actual arc more closely.  
+- ✅ Predictions look smoother and more physically realistic.  
+- ✅ Easier to compare the raw tracked points with the predicted curve visually.  
+
+This demonstrates the flexibility of the pipeline to plug in different regression models and compare their results directly on video overlays.
 ## Installation
 
 1. Clone this repository:
@@ -110,5 +127,6 @@ Contributions, issues and feature requests are welcome. If you find a bug or hav
 ## License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for the full license text and details.
+
 
 
