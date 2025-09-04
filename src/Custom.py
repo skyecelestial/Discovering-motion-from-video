@@ -259,4 +259,4 @@ if __name__ == "__main__":
     expr = tree_str(best_model)
     with open(equation_path, "w") as f:
         f.write(f"y = {expr}\n")
-    print(f"Wrote equation to {equation_path}")
+
