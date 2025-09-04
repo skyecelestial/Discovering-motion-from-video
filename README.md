@@ -17,20 +17,11 @@ Below is an example GIF showing the predicted path overlaid on the original vide
 
 ## Custom Symbolic Regression Result ✨
 
-In addition to the baseline PySR regression, we also implemented a **custom symbolic regression (SR)** method.  
-The custom SR produces a smoother and more accurate trajectory, showing how different regression strategies can improve alignment.
-
+In addition to the baseline PySR regression, I also implemented a **custom symbolic regression (SR)** method.  
 Here is the overlay generated using the custom SR:
 
-![Custom SR overlay](overlay_output_custom.gif)
+![Custom SR overlay](overlay_output_custom.gif)  
 
-**Comparison highlights:**
-
-- ✅ The custom SR trajectory (green) follows the actual arc more closely.  
-- ✅ Predictions look smoother and more physically realistic.  
-- ✅ Easier to compare the raw tracked points with the predicted curve visually.  
-
-This demonstrates the flexibility of the pipeline to plug in different regression models and compare their results directly on video overlays.
 ## Installation
 
 1. Clone this repository:
@@ -127,6 +118,7 @@ Contributions, issues and feature requests are welcome. If you find a bug or hav
 ## License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for the full license text and details.
+
 
 
 
